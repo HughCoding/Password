@@ -42,11 +42,11 @@ def registro_usuario(usuarios_db):
             else:
                 print("Por favor, insira uma nova senha.")
         else:
-            print("Senha aceita!")
+            print("Cadastro concluído!")
             break
 
     usuarios_db[usuario_input] = usuario_senha
-    print(f"Cadastro concluído! usuário: {usuario_input} | senha: {'*' * len(usuario_senha)}")
+    print(f"usuário: {usuario_input} | senha: {'*' * len(usuario_senha)}")
 
 def login_user(usuarios_db):
     tentativa_maxima = 2
